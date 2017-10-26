@@ -1,9 +1,24 @@
 {
-		"plugins": [
-			"security","react"
-		],
-		"extends": [
-			"plugin:security/recommended"
-		],
-		"parser": "babel-eslint"
+	"root": true,
+	"plugins": [
+		"security","react"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:security/recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings"
+	],
+	"parserOptions": {
+		"ecmaVersion": 7,
+		"sourceType": "module"
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"mocha": true
+	},
+	"rules": {
+		"no-console":"warn"
+	}
 }
