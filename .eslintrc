@@ -1,8 +1,9 @@
 {
 		"plugins": [
-			"security"
+			"security","react"
 		],
 		"extends": [
 			"plugin:security/recommended"
-		]
+		],
+		"parser": "babel-eslint"
 }
